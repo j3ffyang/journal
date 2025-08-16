@@ -3,7 +3,7 @@ export const SITE = {
   author: "Jeff Yang",
   profile: "https://everbox.io/",
   desc: "A personal blog sharing my opinions and experiences in information technology, photography, motorcycle riding, and occasionally other passions like guitar and tennis.",
-  title: "AstroPaper",
+  title: "My Personal View to the World",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "https://github.com/j3ffyang/journal/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
