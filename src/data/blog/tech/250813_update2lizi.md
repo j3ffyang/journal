@@ -21,28 +21,21 @@ featured: true
 
 ## What I've Taken / Experienced Recently
 
-AI in the industry is evolving super fast. For example:
-- A code API I wrote on **Vercel** about a month ago stopped working just last week.
-- I updated it multiple times but faced issues, so I had to restart the project.
-- This wastes computing resources (**tokens**).
+AI in the community is evolving super fast. For example: A code API I wrote on **Vercel** about a month ago stopped working just last week. I updated it multiple times but faced issues, so I had to restart the project. This wastes computing resources (**tokens**).
 
 Currently, AI’s capabilities (including my personal limits) cannot *fully* handle even seemingly simple development tasks, like:
 1. Building a **React-Native** frontend.
 2. Supporting **Android** (which requires installing and configuring **android-studio**, very annoying!).
-3. Setting up the backend, including:
-    - Connecting with AI models,
-    - Connecting databases for data persistence.
+3. Setting up the backend, including: Connecting with **AI models**, and connecting databases for **data persistence**.
 
-I’ve tried several popular industry approaches:
-1. **Cursor + Claude/ Gemini/ GPT5** (currently, Gemini’s dev model feels easiest to use).
-2. **Vercel**, **v0.dev**.
-3. Using **Figma** for frontend design + backend connection via **Supabase**  
-     - (Love this **PostgreSQL** traditional SQL database which also supports vector databases.)  
-    - Most of the time, I need to use several platforms simultaneously, which is quite challenging.
+I’ve tried several popular approaches:
+- **Cursor + Claude/ Gemini/ GPT5** (currently, Gemini’s dev model feels easiest to use).
+- **Vercel**, **v0.dev**.
+- Using **Figma** for frontend design + backend connection via **Supabase** - (Love this **PostgreSQL** traditional SQL database which also supports vector databases.)  
 
-Connecting all platforms - Cursor, v0.dev, Figma - to **DeepSeek (DeepInfra)** is very simple.
+Most of the time, I need to use several platforms simultaneously, which is quite challenging. However, Connecting all platforms - Cursor, v0.dev, Figma - to **DeepSeek** (DeepInfra) is very simple.
 
-Using AI for development-designing, writing/outputting documents (**markdown**), and drawing flowcharts (**plantUML**) flows smoothly and looks really polished. Truly amazing.
+Using AI for development-designing, writing/ outputting documents (**markdown**), and drawing flowcharts (**plantUML**) flows smoothly and looks really polished, with all in plain text. Truly amazing!
 
 The architecture is cloud-based and ready to use with a small monthly cost of about 200 Candian dollar during the design & dev phase. For production testing, base costs need further evaluation.
 
@@ -63,7 +56,7 @@ Modules should be as isolated as possible-frontend vs backend, database persiste
 
 Have a clear **hierarchical** framework concept, from big picture to detailed level, **step by step**.
 
-Consider **DevOps** workflow, as a team will be needed for further development, operation, and maintenance (including code and data).
+Consider **DevOps** workflow, as a team will possibly be needed for further development, operation, and maintenance (including code and data).
 
 Security, encryption, and authentication are indispensable.
 

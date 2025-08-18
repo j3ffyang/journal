@@ -6,6 +6,6 @@ Hey there, welcome to my blog! This is my little corner on the internet where I 
 
 If you’re curious about tech, enjoy looking at travel photos, or just want to read some honest reflections, settle in and have a look around.
 
-Credit: this blog site is based on [Astro-Paper](https://github.com/satnaing/astro-paper/graphs/contributors).
+<font size=2px>Credit: this blog site is based on [Astro-Paper](https://github.com/satnaing/astro-paper/graphs/contributors).</font>
 
 ---
