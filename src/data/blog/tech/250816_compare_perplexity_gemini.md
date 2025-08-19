@@ -3,7 +3,7 @@ author: Jeff Yang
 pubDatetime: 2025-08-16T00:00:01.000Z
 modDatetime: 2025-08-16T09:01:01.000Z
 title: A Rough Comparison Between Perplexity and Gemini, Based on My Personal Experience
-description: a
+description: Gemini gives better reason and explanation when you ask for technical coding question, in my opinion.
 draft: false
 featured: true
 tags:
