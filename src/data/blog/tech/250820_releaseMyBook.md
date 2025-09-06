@@ -17,4 +17,4 @@ description: I completed writing this book in early 2025 and initially published
 featured: true
 ---
 
-Here's the link [LangChain Project Book](https://langchain.everbox.io) and you can find the [source code](https://github.com/j3ffyang/langchain_project_book)
+Here's the link [LangChain Project Book](https://langchain.everbox.io) and you can find the [book's source code](https://github.com/j3ffyang/langchain_project_book).
