@@ -3,7 +3,8 @@ layout: ../layouts/AboutLayout.astro
 title: "About Me"
 ---
 
-![me](@/assets/images/aboutMe.jpg)
+<!-- ![me](@/assets/images/aboutMe.jpg) -->
+![me](@../../../assets/images/aboutMe.jpg)
 
 Hello there, curious human! Welcome to the chaotic yet strangely charming world of yours truly.
 
