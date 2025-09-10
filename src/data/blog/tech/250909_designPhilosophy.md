@@ -18,8 +18,6 @@ featured: true
 
 My whole design philosophy for IT, from the beginning to the future, boils down to just two things: **standardization** and **automation**. The secret sauce is how we define the standard "unit" of computing power. The smaller and more precise that unit becomes, the more we can automate, and the more powerful everything gets.
 
-***
-
 ### The Evolution of the "Standard Unit"
 
 Think about the progression over the last 20 years. 📜
@@ -30,8 +28,6 @@ Then, around 2010, **virtual machines (VMs)** became the standard. This was a bi
 
 But then **containers** came along and completely changed the game. This was the revolution. The standard unit of computing became incredibly small and well-defined: just the app and its essential dependencies.
 
-***
-
 ### The "Aha!" Moment: Everything as Code
 
 This is where it all clicked for me around 2019, especially looking at the Cloud Native Computing Foundation (CNCF) landscape. You see that term "App Definition" and realize what it truly means: **everything can be defined in a container**. A database, a web server, a specific process—you name it.
@@ -39,8 +35,6 @@ This is where it all clicked for me around 2019, especially looking at the Cloud
 And how do you define it? With code, most often **YAML**. This is the core of **Infrastructure as Code (IaC)**. I can literally read a YAML file and understand how an entire data center is pieced together. Every single component in a Kubernetes architecture can be described and controlled this way.
 
 Once I got that, I became obsessed. I dove into tools like Terraform, Ansible, and Kustomize, trying to automate absolutely everything. Because when your standard unit is just a text file (the YAML), automation becomes incredibly powerful. All the innovation we see in cloud-native tech stems from this simple idea.
-
-***
 
 ### The Future: Applying the Philosophy to AI
 
