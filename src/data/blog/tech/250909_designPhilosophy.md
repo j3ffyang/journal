@@ -1,7 +1,7 @@
 ---
 author: Jeff Yang
-pubDatetime: 2025-03-08T20:58:52.737Z
-modDatetime: 2025-08-20T09:25:46.734Z
+pubDatetime: 2025-09-08T20:58:52.737Z
+modDatetime: 2025-09-09T09:25:46.734Z
 title: Design Philosophy
 tags:
   - ai
