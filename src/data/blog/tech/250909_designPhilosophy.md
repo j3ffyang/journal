@@ -13,7 +13,7 @@ tags:
   - tech
   - technology
   - linux
-description: My whole design philosophy for IT, from the beginning to the future, boils down to just two things: standardization and automation. The secret sauce is how we define the standard "unit" of computing power. The smaller and more precise that unit becomes, the more we can automate, and the more powerful everything gets.
+description: My whole design philosophy for IT, from the beginning to the future, boils down to just two things: standardization and automation. The secret sauce is how we define the standard "unit" of computing power. 
 featured: true
 ---
 
