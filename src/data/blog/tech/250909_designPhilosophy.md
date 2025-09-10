@@ -1,8 +1,8 @@
 ---
 author: Jeff Yang
-pubDatetime: 2025-03-08T20:58:52.737Z
-modDatetime: 2025-08-20T09:25:46.734Z
-title: Release My Book about LangChain AI Projects
+pubDatetime: 2025-09-08T20:58:52.737Z
+modDatetime: 2025-09-09T09:25:46.734Z
+title: Design Philosophy
 tags:
   - ai
   - llm
@@ -13,18 +13,6 @@ tags:
   - tech
   - technology
   - linux
-description: I completed writing this book in early 2025 and initially published it on GitHub. Now, I am sharing it here with the open-source community. This book documents my hands-on experience over the past two years with AI and large language model (LLM) projects, providing detailed guidance on installation, setup, and configuration.
-featured: true
----
-
-author: Jeff Yang
-pubDatetime: 2025-09-09T20:58:52.737Z
-modDatetime: 2025-09-09T20:25:46.734Z
-title: Design Philosophy
-tags:
-  - linux
-  - opensource
-  - technology
   - cloud
   - cloudnative
   - cncf
@@ -32,8 +20,7 @@ tags:
   - kubernetes
 description: My whole design philosophy for IT, from the beginning to the future, boils down to just two things: standardization and automation. The secret sauce is how we define the standard "unit" of computing power. The smaller and more precise that unit becomes, the more we can automate, and the more powerful everything gets.
 featured: true
-draft: false
-
+---
 
 My whole design philosophy for IT, from the beginning to the future, boils down to just two things: **standardization** and **automation**. The secret sauce is how we define the standard "unit" of computing power. The smaller and more precise that unit becomes, the more we can automate, and the more powerful everything gets.
 
