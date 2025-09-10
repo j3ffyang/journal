@@ -13,7 +13,7 @@ tags:
   - tech
   - technology
   - linux
-description: My whole design philosophy for IT, from the beginning to the future, boils down to just two things: standardization and automation. The secret sauce is how we define the standard "unit" of computing power. 
+description: I completed writing this book in early 2025 and initially published it on GitHub. Now, I am sharing it here with the open-source community. This book documents my hands-on experience over the past two years with AI and large language model (LLM) projects, providing detailed guidance on installation, setup, and configuration.
 featured: true
 ---
 
