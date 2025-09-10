@@ -6,11 +6,7 @@ title: Design Philosophy
 tags:
   - ai
   - llm
-  - largelanguagemodel
-  - privatellm
-  - ollama
   - langchain
-  - tech
   - technology
   - linux
   - cloud
