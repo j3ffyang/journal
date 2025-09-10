@@ -7,7 +7,6 @@ tags:
   - ai
   - llm
   - langchain
-  - technology
   - linux
   - cloudnative
   - cncf
