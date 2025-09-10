@@ -9,7 +9,6 @@ tags:
   - langchain
   - technology
   - linux
-  - cloud
   - cloudnative
   - cncf
   - container
