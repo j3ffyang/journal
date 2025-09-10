@@ -12,27 +12,9 @@ tags:
   - cncf
   - container
   - kubernetes
-description: My whole design philosophy for IT, from the beginning to the future, boils down to just two things: standardization and automation.
+description: My whole design philosophy for IT, from the beginning to the future, boils down to just two things > standardization and automation. The secret sauce is how we define the standard "unit" of computing power. The smaller and more precise that unit becomes, the more we can automate, and the more powerful everything gets.
 featured: true
 ---
-
-
-author: Jeff Yang
-pubDatetime: 2025-09-08T20:58:52.737Z
-modDatetime: 2025-09-09T09:25:46.734Z
-title: Design Philosophy
-tags:
-  - ai
-  - llm
-  - langchain
-  - linux
-  - cloudnative
-  - cncf
-  - container
-  - kubernetes
-description: My whole design philosophy for IT, from the beginning to the future, boils down to just two things: standardization and automation. The secret sauce is how we define the standard "unit" of computing power. The smaller and more precise that unit becomes, the more we can automate, and the more powerful everything gets.
-featured: true
-
 
 
 My whole design philosophy for IT, from the beginning to the future, boils down to just two things: **standardization** and **automation**. The secret sauce is how we define the standard "unit" of computing power. The smaller and more precise that unit becomes, the more we can automate, and the more powerful everything gets.
