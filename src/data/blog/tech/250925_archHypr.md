@@ -226,6 +226,8 @@ If you see your GPU details, you’re golden!
 
 ## Steam on Arch Linux
 
+![Launching RDR on Hyprland](../../../assets/images/2025-09-27-rdr2launcher.png)
+
 > Reference: [ArchWiki - Steam](https://wiki.archlinux.org/title/Steam)
 
 - Make sure to install the **lib32-vulkan-radeon** package for 32-bit Vulkan support on AMD GPUs — this is crucial for running lots of Steam games.
@@ -317,7 +319,9 @@ pacman -S nwg-look adw-gtk-theme
 
 #### Development Tools
 
-For coding, I prefer vim with extra features, so I grab this version from AUR:
+![vim as Python IDE](../../../assets/images/2025-10-08-vimrc.png)
+
+For coding, I prefer `vim` with Python IDE features, so I grab this version from AUR:
 
 ```
 yay -S vim-youcompleteme-git
@@ -372,18 +376,12 @@ This setup helps you unify RGB control on your system, especially for ROG device
 
 
 
-#### Chinese Input Method
-```
-fcitx5-im fcitx5-chinese-addons
-```
-
-
 #### Chinese Input Method Setup with fcitx5
 
 To get Chinese input working on Arch Linux, I'd recommend using **fcitx5** along with the Chinese addons. Here's what you need to install:
 
 ```sh
-sudo pacman -S fcitx5-im fcitx5-chinese-addons
+pacman -S fcitx5-im fcitx5-chinese-addons
 ```
 
 
