@@ -291,19 +291,9 @@ Here’s what to check and fix:
 
 - If running hybrid graphics, ensure Vulkan is targeting the correct GPU (discrete vs integrated), as Vulkan can fail to initialize if it tries the wrong one.
 
-- Consider reinstalling or updating Vulkan drivers and related packages fully:
-
-    ```
-    vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader \
-    nvidia-dkms nvidia-utils lib32-nvidia-utils libva-nvidia-driver
-    ```
-
 - If using Steam Proton, verify the Proton version supports your GPU and Vulkan setup.
 
 - Finally, disabling Steam's **shader pre-caching** for the game has helped some users with Vulkan launch issues. (I didn't do anything for this. Let it be default)
-
-
-
 
 
 
