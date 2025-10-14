@@ -109,7 +109,7 @@ I’m using the **DKMS kernel** instead of the LTS kernel because DKMS works bet
 Besides the basic recommended packages, here’s what I like to install right after mounting the root partition but before running `arch-chroot`, just my personal setup:
 
 ```
-base-devel git linux-headers iwctl sudo gvim which rsync bash-completion openssh cmake
+base-devel git linux-headers iwd sudo gvim which rsync bash-completion openssh cmake
 ```
 
 `iwctl` is very important to install if you don't want to have wired connection for network.
