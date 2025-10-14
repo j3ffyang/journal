@@ -310,6 +310,12 @@ pacman -S nwg-look adw-gtk-theme
 - **nwg-look** is a GTK settings editor designed for Wayland environments (like Hyprland), making it simple to adjust themes without hacks.
 - **adw-gtk-theme** is a dark GTK theme based on libadwaita, offering a modern look especially for GTK3/4 apps.
 
+Then add the following 2 lines in `~/.config/hypr/hyprland.conf`
+```
+exec-once = gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
+exec-once = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+```
+
 #### Development Tools
 
 ![vim as Python IDE](../../../assets/images/2025-10-08-vimrc.png)
