@@ -112,10 +112,7 @@ Besides the basic recommended packages, here’s what I like to install right af
 base-devel git linux-headers iwd sudo gvim which rsync bash-completion openssh cmake
 ```
 
-`iwctl` is very important to install if you don't want to have wired connection for network.
-
-
-
+`iwctl`, from `iwd` package, is very important to install if you don't want to have wired connection for network.
 
 
 ## Hyprland
@@ -159,6 +156,12 @@ wireplumber pipewire-pulse pavucontrol
 - **wireplumber** is the PipeWire session manager, coordinating audio and video streams.
 - **pipewire-pulse** provides compatibility with applications expecting PulseAudio.
 - **pavucontrol** is a user-friendly volume control interface.
+
+#### Fonts
+
+```
+pacman -S nerd-fonts 
+```
 
 
 ## GPU Drivers
@@ -368,7 +371,7 @@ lsmod | grep i2c-dev
 If the module isn’t loaded, you can enable it with:
 
 ```
-sudo modprobe i2c-dev
+modprobe i2c-dev
 ```
 
 This setup helps you unify RGB control on your system, especially for ROG devices.
