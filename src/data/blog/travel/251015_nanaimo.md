@@ -1,7 +1,7 @@
 ---
 author: Jeff Yang
-pubDatetime: 2025-10-15:58:52.737Z
-modDatetime: 2025-10-14:25:46.734Z
+pubDatetime: 2025-10-15T10:58:52.737Z
+modDatetime: 2025-10-15T10:25:46.734Z
 title: Travel Plan from Toronto, Ontario to Nanaimo British Columbia
 tags:
   - travel
