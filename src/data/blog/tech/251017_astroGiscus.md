@@ -1,7 +1,7 @@
 ---
 author: Jeff Yang
-pubDatetime: 2025-10-17:58:52.737Z
-modDatetime: 2025-10-16:25:46.734Z
+pubDatetime: 2025-10-17T10:58:52.737Z
+modDatetime: 2025-10-17T10:25:46.734Z
 title: My Simple Way to Install Astro + TailwindCSS + Giscus
 tags:
   - opensource
