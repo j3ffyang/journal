@@ -93,3 +93,5 @@ To fully leverage AI, an open and unrestricted internet environment is required.
 3. 实际无论多小，还是需要一个团队的。可能2～3个，分别负责架构统筹设计，前端 (Android, iOS 和部分 Art)，后端 (持久化数据库，语言模型)
 
 4. 充分利用 AI，需要一个开放自由的网络环境。否则，很容易在网络上，浪费许多时间。你懂的
+
+I spent 2 hours with YuanBao to show him how this worked today.
