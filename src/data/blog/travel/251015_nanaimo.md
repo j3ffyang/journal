@@ -2,38 +2,57 @@
 author: Jeff Yang
 pubDatetime: 2025-10-15T10:58:52.737Z
 modDatetime: 2025-10-15T10:25:46.734Z
-title: Travel Plan from Toronto, Ontario to Nanaimo British Columbia
+title: Why We're Considering a Move from Toronto to Nanaimo, BC
 tags:
   - travel
   - explore
-  - advanture
+  - adventure
   - westcoast
   - motorcycle
   - ride
   - riding
-description: Why Do I decide to Move from Toronto to Nanaimo?
+  - trip
+description: Exploring the reasons behind our potential move from Toronto to Nanaimo, BC - from stunning scenery and year-round motorcycle riding to cost of living and family considerations.
 featured: false
 draft: true
 ---
 
 
-@Guido - that was a good question. We've considered the same curiously for a while. And some of our friends thought we should accompany (follow) our kids. Here's what I can answer and maybe we discuss later
+Hey there! That's actually a really good question, and honestly, we've been wondering the same thing ourselves for a while now. Some of our friends have even suggested we should just follow our kids out there. Here's what's been going through my head, and maybe we can chat about it more later.
 
-1. The scenery - We drove to several cities/ towns in British Columbia in July, after getting landed in Vancouver. They're Whistler, Hope (where Stallone's First Blood was filmed in 1982. Yeah that movie was filmed in Canada for budget reason), Kamloops, Revelstoke (the original headquarter of Canadian Pacific Railway company in 1880's). Our original destination was Banff (280KMs from Revelstoke), Alberta. Unfortunately we didn't have enough time to drive to and come back (saved the trip for the future). Their scenery are quite different and unique from Toronto, Montreal and around. 
+## The Scenery is Absolutely Stunning
 
-2. The weather - The temperature in British Columbia in winter is barely under zero degrees. And in July, when we came to Canada, Beijing was close to 40 degrees and Vancouver was just 18 (chilly in the morning in summer). I think it's good for us to ride motorcycle all year round. I looked around for motor-bikes but ride is completely IMPOSSIBLE for half year in Toronto due to frequent heave snow in winter. However, I was told (warned) that it's very wet and rainy in Vancouver, more than 50%. So we'll see.
+So last July, right after we landed in Vancouver, we did this epic road trip through British Columbia. We hit up Whistler (you know, that famous ski resort town that hosted the 2010 Winter Olympics), Hope (where they filmed Stallone's First Blood back in 1982 - yeah, that movie was shot in Canada to save money), Kamloops, and Revelstoke (which was actually the original headquarters of the Canadian Pacific Railway back in the 1880s - pretty cool history there). 
 
-3. The expense. Since we don't have to work onsite in cities, we don't really have to stay in Toronto nor Vancouver (the place we're going to is 120KMs away from Vancouver). It'd be good if living in a quiet and inexpensive place. Why not?
+Our original plan was to make it all the way to Banff in Alberta (about 280km from Revelstoke), but we just didn't have enough time for the round trip. The landscapes out there are completely different from anything you see around Toronto or Montreal - we're talking about these massive mountain ranges, pristine lakes, and forests that go on forever. It's like stepping into a postcard.
 
-4. The advanture. As long as we're free, don't have to work in office, don't have to get stuck with kids (or parents), we'd like to travel. As I mentioned before, Japan and Italy are still attracting my interest.
+## The Weather is Actually Perfect for Motorcycle Riding
 
-5. We wish to have kids live close to us (still need to keep some distance). We want to explore the West and see whether there's some quiet and nice place where kids might like. They need guidance and courage. I like to do that.
+Here's the thing about BC winters - they barely dip below freezing, which is a huge change from Toronto's brutal snowstorms. When we arrived in July, Beijing was hitting almost 40°C while Vancouver was sitting pretty at 18°C - I actually needed a jacket in the mornings during summer! 
 
-6. British Columbia is close to Asia (far to Enrope though). The direct flight from Vancouver to Japan is only 10 hours. From there, it'd take ~3 hours to get back to Beijing.
+I've been looking into motorcycles because I think we could ride year-round out there. In Toronto, riding is basically impossible for half the year due to all that heavy snow. Though I have to admit, everyone keeps warning me that Vancouver gets super rainy - like more than 50% of the time. We'll see how that goes, I guess.
 
-Anyway, we don't really have to lock ourselves in British Columbia. We may come back to Toronto. We don't have to decide at this moment. 
+## Cost of Living Makes Sense
 
+Since we don't need to be physically present in the big cities for work, we don't really have to stick around Toronto or Vancouver. The place we're looking at is about 120km from Vancouver, so we could live somewhere quiet and affordable while still being close enough to the city when we need it. Why not, right?
 
+## The Adventure Factor
+
+As long as we're free and don't have to be stuck in an office or tied down with family obligations, we want to travel. Japan and Italy are still calling my name, and being on the west coast would make those trips so much easier.
+
+## Family Considerations
+
+We want our kids to live close by, but not too close, you know? We're hoping to explore the West Coast and find some nice, quiet spots that the kids might actually want to visit. They'll need some guidance and encouragement, and I'm totally up for that role.
+
+## Geographic Advantage
+
+British Columbia is way closer to Asia (though farther from Europe, obviously). A direct flight from Vancouver to Japan is only about 10 hours, and then it's just 3 hours from there to Beijing. That's a game-changer for us.
+
+## Keeping Our Options Open
+
+The best part? We're not locking ourselves into anything. We might end up back in Toronto eventually, or we might fall in love with the west coast. We don't have to decide everything right now, and that's actually pretty freeing. 
+
+<!-- 
 ---
 
 That’s a great question. We’ve actually been wondering the same thing for a while. Some of our friends even suggested that we should tag along with our kids. Here’s what I think for now, and maybe we can chat more about it later.
@@ -50,4 +69,4 @@ We want our kids to live close by, but still keep a bit of distance. We wanna ex
 
 Also, British Columbia is pretty close to Asia, though it’s farther from Europe. Direct flights from Vancouver to Japan take about 10 hours, and then it’s just around 3 hours back to Beijing.
 
-Anyway, we’re not locked into staying in British Columbia. We might end up back in Toronto. We don’t need to decide everything right now.
+Anyway, we’re not locked into staying in British Columbia. We might end up back in Toronto. We don’t need to decide everything right now. -->
