@@ -1,3 +1,16 @@
+---
+author: Jeff Yang
+pubDatetime: 2026-01-20T20:58:52.737Z
+modDatetime: 2026-01-26T09:25:46.734Z
+title: My Travel Log
+tags:
+  - mexico
+  - west
+  - guadalajara
+description: My Travel Log
+featured: true
+draft: true
+---
 
 - Power interrupt at the airport. Backup in 5 mins. But my Uber left, since the driver couldn't find me
 - The next driver picked me up successfully. He tried every effort to tell me his car isn't permitted... downloaded a translation app
