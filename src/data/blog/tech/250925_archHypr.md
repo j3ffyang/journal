@@ -312,8 +312,8 @@ pacman -S nwg-look adw-gtk-theme
 
 Then add the following 2 lines in `~/.config/hypr/hyprland.conf`
 ```
-exec-once = gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
 exec-once = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+exec-once = gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 ```
 
 #### Development Tools
