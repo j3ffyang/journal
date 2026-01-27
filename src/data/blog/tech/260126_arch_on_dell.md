@@ -74,13 +74,13 @@ sudo systemctl enable --now tlp.service
 ```sh
 ...
 # Battery charge level below which charging will begin.
-START_CHARGE_THRESH_BAT0=40
+START_CHARGE_THRESH_BAT0=50
 # Battery charge level above which charging will stop.
 STOP_CHARGE_THRESH_BAT0=60
 ...
 ```
 
-This means charging starts when the battery drops below **40%**, and stops at **60%**. Adjust to whatever you prefer (e.g., 70→80 if you still want decent unplugged time).
+This means charging starts when the battery drops below **50%**, and stops at **60%**. Adjust to whatever you prefer (e.g., 70→80 if you still want decent unplugged time).
 
 
 - Check status:
