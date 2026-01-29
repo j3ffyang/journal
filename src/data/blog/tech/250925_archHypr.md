@@ -311,10 +311,20 @@ pacman -S nwg-look adw-gtk-theme
 - **adw-gtk-theme** is a dark GTK theme based on libadwaita, offering a modern look especially for GTK3/4 apps.
 
 Then add the following 2 lines in `~/.config/hypr/hyprland.conf`
+
+```sh
+# for libadwaita gtk4 apps you can use this command:
+exec = gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"   # for GTK4 apps
+
+# for gtk3 apps you need to install adw-gtk3 theme (in arch linux sudo pacman -S adw-gtk-theme)
+exec = gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"   # for GTK3 apps
+
+# for kde apps you need to install: sudo pacman -S qt5ct qt6ct kvantum kvantum breeze-icons   
+# you will need to set dark theme for qt apps from kde more difficult thans with gnome :D:
+env = QT_QPA_PLATFORMTHEME,qt6ct   # for Qt apps# Theme
 ```
-exec-once = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-exec-once = gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
-```
+
+Edit reference from https://www.reddit.com/r/hyprland/comments/1h4abmt/how_do_i_apply_dark_theme/
 
 #### Development Tools
 

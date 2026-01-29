@@ -74,7 +74,7 @@ sudo systemctl enable --now tlp.service
 ```sh
 ...
 # Battery charge level below which charging will begin.
-START_CHARGE_THRESH_BAT0=40
+START_CHARGE_THRESH_BAT0=50
 # Battery charge level above which charging will stop.
 STOP_CHARGE_THRESH_BAT0=60
 ...
