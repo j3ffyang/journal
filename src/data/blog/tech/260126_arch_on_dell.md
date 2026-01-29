@@ -80,7 +80,7 @@ STOP_CHARGE_THRESH_BAT0=60
 ...
 ```
 
-This means charging starts when the battery drops below **40%**, and stops at **60%**. Adjust to whatever you prefer (e.g., 70→80 if you still want decent unplugged time).
+This means charging starts when the battery drops below **50%**, and stops at **60%**. Adjust to whatever you prefer (e.g., 70→80 if you still want decent unplugged time).
 
 
 - Check status:
