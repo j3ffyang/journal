@@ -3,7 +3,7 @@ export const SITE = {
   author: "Jeff Yang",
   profile: "https://everbox.io/",
   desc: "A personal blog sharing my opinions and experiences in information technology, photography, motorcycle riding, and occasionally other passions like guitar and tennis.",
-  title: "j3ffyang",
+  title: "My Personal View to the World",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
