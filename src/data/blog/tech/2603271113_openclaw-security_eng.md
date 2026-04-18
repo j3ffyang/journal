@@ -1,7 +1,7 @@
 ---
 author: Jeff Yang
-pubDatetime: 2026-04-18T07:58:52.737Z
-modDatetime: 2026-04-18T07:25:46.734Z
+pubDatetime: 2026-04-18T08:20:00.737Z
+modDatetime: 2026-04-18T08:30:00.734Z
 title: OpenClaw Security Risks
 tags:
   - linux
@@ -12,41 +12,55 @@ tags:
   - security
 description: OpenClaw security risks - a warning to users and self-hosters
 featured: true
-Draft: false
+draft: false
 ---
 
 # OpenClaw Security Risks: A Warning to Users and Self-Hosters
 
 ![secImg](../../../assets/images/2603271113_openclaw-security.png)
 
-OpenClaw 🦞 is a popular open-source AI agent platform offering powerful automation capabilities, but recent Reddit discussions and security audits have revealed serious security risks. This article outlines exposed risks, real-world incidents, and actionable remediation suggestions to help you adopt protective measures when self-hosting or decide whether to migrate to a safer alternative.
+OpenClaw 🦞 is powerful, but it currently carries serious security risk when self-hosted with default settings. Community reports and security discussions consistently point to exposed services, untrusted community skills, and weak operational guardrails.
+
+This guide explains:
+
+- what is risky
+- how attackers typically abuse it
+- the minimum hardening steps you should apply today
 
 **Key takeaways**
-- Default ports (8000/18789) exposed to the internet; hundreds of thousands of instances online
-- Community “skills” carry a high proportion of malicious payloads
-- Mandatory isolation, skill whitelisting, and log auditing are recommended
+- Many instances expose default ports (`18789`, `8000`) publicly
+- Community skills can function as a supply-chain attack vector
+- Safe deployment requires isolation, strict allowlisting, and continuous monitoring
 
-## Overview of Core Vulnerabilities
+## Why OpenClaw Is High Risk
 
-OpenClaw’s design grants agents broad system access, and the “skills” (contributed by the community) distributed via ClawHub amplify supply-chain risks. Multiple audits show that a significant proportion of thousands of skills contain security issues, with some even containing malicious code (such as downloaders, keyloggers, data exfiltration tools, and command injectors). These skills often reappear after removal, evading simple manual review.
+OpenClaw agents can execute powerful actions on the host. That design is useful for automation, but dangerous when combined with unvetted third-party skills and internet-exposed control surfaces.
 
-Default deployments often expose ports (such as 8000, 18789, etc.) to the public internet. Scan data shows hundreds of thousands of instances online, with some leaking configurations or databases. Input sources (emails, Markdown, web content) are easily embedded with executable payloads and processed with near-root permissions. In response to these issues, Kaspersky, independent researchers, and community audits have found empirical cases, recommending that OpenClaw be treated as a high-risk service and run with mandatory isolation.
+The two biggest risk multipliers are:
 
-## Threat Landscape
+1. **Publicly exposed services**  
+   If gateway/API ports are reachable from the internet, attackers can scan, probe, and in some cases execute workflows or abuse control channels.
 
-The OpenClaw ecosystem’s broad agent capabilities and community-driven skill marketplace create a large attack surface. In 2025–2026, campaigns have increasingly automated malicious skill propagation, credential exfiltration, and exploitation of exposed gateways. Attackers leverage obfuscated payloads, fake dependencies, and recycled uploads to bypass basic reviews, while exposed Control Gateway (18789) and Vector/API (8000) enable zero-click lateral movement and persistence.
+2. **Untrusted skills**  
+   Skills sourced from public hubs may include obfuscated or malicious behavior (credential theft, command downloaders, exfiltration logic). Even when removed, variants can reappear.
 
-Key observed patterns include skills exfiltrating API keys and host IPs via Discord webhooks or external HTTP endpoints, and widespread port exposure allowing unauthenticated access. Prioritize immediate hardening: bind services to loopback, enforce skill whitelisting, and audit IOCs such as unexpected outbound connections and credential strings in configs. Treat all unaudited skills as potentially malicious and isolate them in containers or dedicated VMs to reduce risk.
+Treat OpenClaw as you would any high-privilege remote execution system: assume compromise is possible unless strict controls are in place.
+
+## Common Attack Patterns
+
+Recent community incident reports show recurring patterns:
+
+- Exfiltration of API keys, tokens, host metadata, or config files
+- Skills using hidden outbound calls (webhooks, HTTP POST, encoded payloads)
+- Port exposure on default binds (`0.0.0.0`) with weak access controls
+- Re-uploaded malicious skill variants with minor changes
+
+In practice, compromise often starts with either a malicious skill install or an exposed management endpoint.
 
 ## Real Incidents and Attack Chains
 
-A timeline of verifiable incidents compiled by the community and security blogs shows multiple malicious skill propagation events, configuration leaks, and remote execution vulnerabilities due to default configurations.
-
-- **ClawHub Malicious Activity (January–February 2026)**
-
-  Dozens to hundreds of skills were found to contain malicious payloads with encoded obfuscation, fake dependencies, and unencrypted HTTP exfiltration. Some samples deploy encryption ransomware or credential-stealing tools on Windows/macOS/Linux. These skills are often re-uploaded with minor modifications to bypass interception.
-
-  Recommended inspection process (Linux/macOS):
+- **ClawHub Malicious Activity (January-February 2026)**  
+  Dozens to hundreds of skills were reported with malicious payload patterns, including encoded obfuscation, fake dependencies, and unencrypted HTTP exfiltration.
 
   ```bash
   # Clone skills repo for audit
@@ -59,16 +73,15 @@ A timeline of verifiable incidents compiled by the community and security blogs 
   # Check for non-HTTPS endpoints
   grep -r -i "http://" . | grep -v "https"
 
-  # Remove suspicious skills
+  # Remove suspicious skills. Be careful of this rm command
   find . -name "*research*" -o -name "*hsk*" | xargs rm -rf
 
   # Reinstall clean: backup first
   cp -r ~/openclaw-skills ~/openclaw-skills.bak
   ```
 
-- **Moltbook Leak Case (February 2026)**
-
-  A popular skill exfiltrated user configurations (including API keys and host IPs) via a Discord webhook, affecting tens of thousands of instances and appearing as data samples on the dark web. Common commands to detect such exfiltration include searching system logs for webhook/HTTP POST behavior and scanning running processes.
+- **Moltbook Leak Case (February 2026)**  
+  A widely shared report described config/API key exfiltration behavior via webhook-like outbound channels.
 
   ```bash
   # Scan local OpenClaw logs for exfil (Discord, external APIs)
@@ -82,11 +95,8 @@ A timeline of verifiable incidents compiled by the community and security blogs 
   grep -r "api_key\|token\|webhook" ~/.openclaw/config.yaml
   ```
 
-- **Port Exposure and Remote Execution (Persistent Issue)**
-
-  Large-scale scans show many instances exposed on default ports, and some demos (such as those using Zenity) demonstrate zero-click remote command execution triggered via WebSocket or user input. Attackers exploit these exposed services to automatically propagate malicious skills or execute payloads.
-
-  Quick blocking example:
+- **Port Exposure and Remote Execution (Persistent Issue)**  
+  Publicly exposed defaults continue to be one of the most common root causes.
 
   ```bash
   # On Ubuntu/Debian (Linux)
@@ -99,17 +109,17 @@ A timeline of verifiable incidents compiled by the community and security blogs 
   sudo pfctl -E
   ```
 
-## Tiered Hardening Checklist (Practical Priority)
+## Practical Hardening Plan
 
-The following actionable hardening suggestions are provided in three tiers, applicable to Linux/macOS environments. Test in a VM before going live.
+Use this in order. Do not skip Tier 1.
 
-### Tier 1: Basic Protection (Must Do)
+### Tier 1 (Required): Lock Down the Host
 
-- Disable root login and enable key-based authentication
-- Enable host firewall (UFW) and fail2ban; default deny incoming traffic, allow SSH only from trusted IPs
-- Bind OpenClaw components to loopback (127.0.0.1); prohibit listening on arbitrary network interfaces
-
-Example:
+- Disable password-based SSH and root SSH login
+- Set host firewall to default deny inbound
+- Allow SSH only from trusted IPs
+- Bind all OpenClaw services to loopback
+- Remove or disable unused tools/integrations
 
 ```bash
 # Disable root SSH, enforce keys (Linux)
@@ -123,9 +133,12 @@ sudo ufw enable; sudo ufw default deny incoming
 sudo ufw allow ssh  # From your IP only: sudo ufw allow from <YOUR_IP> to any port 22
 ```
 
-### Tier 2: Container Isolation (Strongly Recommended)
+### Tier 2 (Strongly Recommended): Isolate Runtime
 
-Use Docker to minimize host exposure, restrict network access and mounted volumes. Security community members such as Simon Willison suggest running non-managed agents only in isolated environments.
+- Run OpenClaw in a dedicated container or VM
+- Keep network access minimal (prefer private-only connectivity)
+- Mount only required volumes; use read-only mounts where possible
+- Never run with host root privileges unless absolutely required
 
 ```bash
 # Pull official image (verify tag)
@@ -143,13 +156,13 @@ docker logs secure-claw | grep -i "skill\|load"
 docker exec secure-claw ps aux  # Check processes
 ```
 
-### Tier 3: Advanced Isolation and Zero Trust (Enterprise/Multi-tenant)
+### Tier 3 (Advanced): Zero-Trust Operations
 
-- Use Tailscale/VPN to maintain access without public-facing ports
-- Run agents in a dedicated VLAN/VM, limiting reachable network resources
-- Adopt a skill whitelist policy, allowing only audited skills to load
-
-Example (Tailscale + Whitelist):
+- Require VPN/Tailscale/SSH tunnel for remote access
+- Keep OpenClaw off the public internet entirely
+- Enforce a strict skill allowlist
+- Monitor outbound network traffic and process execution
+- Rotate credentials regularly and after any suspicious event
 
 ```bash
 # Tailscale VPN (no public ports)
@@ -164,36 +177,47 @@ openclaw --config ~/.openclaw/config.yaml --skills allowlist.yaml
 sudo strace -p $(pgrep openclaw) -e trace=execve  # Trace execs
 ```
 
-Additional recommendations: disable unnecessary tools, enable unattended-upgrades, and periodically audit the skills directory using static/dynamic analysis tools.
+## Ports 18789/8000: What To Do
 
-## Gateway and Port Context — Why 18789/8000 Are Dangerous
+Do not expose OpenClaw gateway/API ports directly to the internet.
 
-- Gateway (default port 18789) provides a WebSocket channel and control panel; if bound to 0.0.0.0, it becomes visible to the public internet.
-- Vector/API (commonly 8000) may also expose sensitive operations or configurations.
-
-Correct practice is to bind these services to loopback:
+Set components to loopback-only:
 
 ```bash
 openclaw config set gateway.bind "loopback"
 openclaw config set vector.bind "loopback"
 openclaw config set frontend.bind "loopback"
+```
 
-# Verify
+Then verify:
+
+```bash
 openclaw config get gateway.bind
 openclaw gateway status
 sudo netstat -tuln | grep -E "18789|8000|3000"
 ```
 
-And use SSH port forwarding or Tailscale for remote access instead of directly exposing ports.
+If remote access is needed, use SSH port forwarding or a private mesh VPN (for example, Tailscale), not direct port exposure.
 
-## Alternative Solutions and Conclusion
+## Incident Response (If You Suspect Compromise)
 
-If you need an auditable, low-risk agent or automation:
+1. Isolate the host from external networks
+2. Disable OpenClaw services and revoke exposed credentials
+3. Remove untrusted skills and redeploy from a known-good baseline
+4. Review logs for suspicious outbound traffic and process execution
+5. Rotate all API keys, tokens, and secrets
 
-- Prioritize managed cloud APIs (e.g., enterprise-grade LLM services) or audited local frameworks (sandboxed LangChain deployments, audited Auto-GPT forks).
-- If you must self-host, default to Docker + private network + strict whitelist policy; treat all skills as potential malicious code.
+If you cannot verify integrity, rebuild the environment from scratch.
 
-Summary: OpenClaw’s ease of use comes with significant security costs. The widespread exposure of instances illustrates the danger of default configurations and an open ecosystem. Immediate auditing, isolation, and migration where feasible are the only reasonable strategies to avoid becoming the next victim.
+## Safer Alternatives
+
+If you need stronger auditability and lower operational risk:
+
+- Prefer managed platforms with enterprise controls
+- Use local frameworks only with sandboxing and strict policy controls
+- Avoid community extensions unless they are audited and pinned
+
+OpenClaw can still be useful, but only when operated with a security-first setup. The default convenience path is not a safe path.
 
 ---
 
