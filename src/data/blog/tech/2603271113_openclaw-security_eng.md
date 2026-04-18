@@ -17,7 +17,7 @@ Draft: false
 
 # OpenClaw Security Risks: A Warning to Users and Self-Hosters
 
-![secImg](img/2603271113_openclaw-security.png)
+![secImg](../../../assets/images/2603271113_openclaw-security.png)
 
 OpenClaw 🦞 is a popular open-source AI agent platform offering powerful automation capabilities, but recent Reddit discussions and security audits have revealed serious security risks. This article outlines exposed risks, real-world incidents, and actionable remediation suggestions to help you adopt protective measures when self-hosting or decide whether to migrate to a safer alternative.
 
