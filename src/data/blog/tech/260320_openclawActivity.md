@@ -77,10 +77,10 @@ history | sed 's/^[ ]*[0-9]\+[ ]*//' | grep '^openclaw' | sort | uniq -c | sort 
 All command line, all day. Let me break down the hit parade:
 
 - `openclaw gateway restart`: restart the gateway
-- `openclaw models list`: list configured models (used this a ton while wiring up `imageModel`)
+- `openclaw models list`: list configured models (used this a ton while wiring up `imageGenerationModel`)
 - `openclaw skills check`: see which SKILLs are enabled
 - `openclaw skills list`: see all available SKILLs
-- `openclaw config get agents.defaults.models`: check which models the current project uses, including `imageModel` — you can set multiple to handle different tasks like text and image separately
+- `openclaw config get agents.defaults.models`: check which models the current project uses, including `imageGenerationModel` — you can set multiple to handle different tasks like text and image separately
 - `openclaw config get agents.defaults.model.primary`: check the global Primary model
 - `openclaw plugins list`: list installed Plugins, like authentication ones
 - `openclaw channels list`: list configured channels, like Telegram, WhatsApp, Discord
@@ -134,8 +134,8 @@ history | sed 's/^[ ]*[0-9]\+[ ]*//' | grep '^clawhub' | sort | uniq -c | sort -
 openclaw config set agents.defaults.model.primary "openai/gpt-5-mini"
 # set project model
 openclaw config set agents.defaults.models "openai/gpt-image-1-mini"
-# set imageModel
-openclaw config set agents.defaults.imagemodel "openai/gpt-image-1-mini"
+# set imageGenerationModel
+openclaw config set agents.defaults.imagegenerationmodel "openai/gpt-image-1-mini"
 ```
 
 Backup tips:
