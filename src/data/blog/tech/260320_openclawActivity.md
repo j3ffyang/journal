@@ -11,7 +11,7 @@ tags:
   - llm
 description: Setup and configure OpenClaw
 featured: true
-Draft: false
+draft: false
 ---
 
 # What I've Been Up To in OpenClaw 🦞 Lately
@@ -116,7 +116,7 @@ history | sed 's/^[ ]*[0-9]\+[ ]*//' | grep '^clawhub' | sort | uniq -c | sort -
 
 `install`, `uninstall`, `update`, `list` — no lecture needed, you know the drill. The rest:
 
-- `clawhub login --token "clh_..."`: log in without a browser — perfect for pure CLI environments
+- `clawhub login --token "clh_..."`: log in without a browser — perfect for pure CLI environments. **Avoid passing tokens directly in hitory-enabled shells.**
 - `clawhub search "search"`: hunt for SKILLs with specific functionality, like DuckDuckGo Search
 - `clawhub publish ~/.openclaw/workspace/skills/blog-polish-zhcn/ --version 1.0.`: needs the full path when publishing, don't forget it
 
