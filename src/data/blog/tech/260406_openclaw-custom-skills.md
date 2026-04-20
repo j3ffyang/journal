@@ -15,7 +15,7 @@ tags:
   - claudecode
 description: Writing your own custom skill in OpenClaw 
 featured: true
-Draft: false
+draft: false
 ---
 
 # Writing Your Own Custom Skill in OpenClaw 🦞
@@ -262,7 +262,7 @@ The workflow should emit a single structured output object with these fields:
 
 The image must be written as a PNG file. It must use the same basename as the markdown file and be saved in the same directory as the markdown file. The skill should not emit arrays of images or prompts. It should not reference per-section image generation in the description, schema, or workflow.
 
-Generate the image using OpenClaw’s default image model (`agents.defaults.imageModel`) unless an explicit image generation model is provided by the environment.
+Generate the image using OpenClaw’s default image model (`agents.defaults.imageGenerationModel`) unless an explicit image generation model is provided by the environment.
 ```
 
 The structure is straightforward: name, description, version, input parameters, and output structure. Keep it clear and specific about what your skill does.
