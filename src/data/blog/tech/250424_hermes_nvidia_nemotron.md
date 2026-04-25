@@ -1,3 +1,22 @@
+---
+author: Jeff Yang
+pubDatetime: 2026-04-24T08:20:00.737Z
+modDatetime: 2026-04-24T08:30:00.734Z
+title: Hermes connects Nvidia Nemotron Model via OpenRouter for Free
+tags:
+  - linux
+  - opensource
+  - hermes
+  - ai
+  - openrouter
+  - nvidia
+  - nemotron
+  - model
+description: Hermes connects Nvidia Nemotron model via OpenRouter for free
+featured: true
+draft: false
+---
+
 # Hermes connects Nvidia Nemotron Model via OpenRouter for Free
 
 ## Background
