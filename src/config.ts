@@ -4,7 +4,8 @@ export const SITE = {
   profile: "https://everbox.io/",
   desc: "A personal blog sharing my opinions and experiences in information technology, photography, motorcycle riding, and occasionally other passions like guitar and tennis.",
   title: "My Personal View to the World",
-  ogImage: "astropaper-og.jpg",
+  // ogImage: "astropaper-og.jpg",
+  ogImage: "L1003949.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
@@ -14,7 +15,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/j3ffyang/journal/",
+    url: "https://github.com/j3ffyang/astro_journal/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
