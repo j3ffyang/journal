@@ -14,7 +14,7 @@ tags:
   - agent
 description: Hermes integrates with Free OpenRouter's Elephant-Alpha Model
 featured: true
-Draft: false
+draft: false
 ---
 
 # Hermes integrates with Free OpenRouter's Elephant-Alpha Model
