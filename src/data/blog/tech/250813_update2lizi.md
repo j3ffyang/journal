@@ -14,7 +14,7 @@ tags:
   - technology
   - cursor
 description: Currently AI won't be able to replace human developer in real project. I have contributed to an AI development project utilizing the Cursor editor, integrating multiple coding models. This is a summary of my experience and contributions that I am providing to project management.
-featured: true
+featured: false
 ---
 
 ## Table of contents

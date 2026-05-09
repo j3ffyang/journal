@@ -33,30 +33,8 @@ Using a laptop like the Dell XPS 13 as a docked workstation on Linux often prese
 
 This guide outlines a proven configuration to ensure your external monitor, keyboard, and mouse remain responsive, even during long idle periods.
 
-```sh
-                  -`                     jeff@rog
-                 .o+`                    --------
-                `ooo/                    OS: Arch Linux x86_64
-               `+oooo:                   Host: ROG Zephyrus G14 GA402XY_GA402XY (1.0)
-              `+oooooo:                  Kernel: Linux 7.0.3-arch1-2
-              -+oooooo+:                 Uptime: 1 hour, 52 mins
-            `/:-:++oooo+:                Packages: 1112 (pacman)
-           `/++++/+++++++:               Shell: bash 5.3.9
-          `/++++++++++++++:              Display (Redmi 27 NQ): 2560x1440 in 27", 60 Hz [External]
-         `/+++ooooooooooooo/`            WM: Hyprland 0.54.3 (Wayland)
-        ./ooosssso++osssssso+`           Cursor: Adwaita
-       .oossssso-````/ossssss+`          Terminal: kitty 0.46.2
-      -osssssso.      :ssssssso.         Terminal Font: NotoSansMono-Regular (13pt)
-     :osssssss/        osssso+++.        CPU: AMD Ryzen 9 7940HS (16) @ 5.26 GHz
-    /ossssssss/        +ssssooo/-        GPU 1: NVIDIA GeForce RTX 4090 Laptop GPU [Discrete]
-  `/ossssso+/:-        -:/+osssso+-      GPU 2: AMD Radeon 780M Graphics [Integrated]
- `+sso+:-`                 `.-/+oso:     Memory: 10.82 GiB / 30.57 GiB (35%)
-`++:.                           `-/+/    Swap: 0 B / 4.00 GiB (0%)
-.`                                 `/    Disk (/): 1.04 TiB / 1.82 TiB (57%) - xfs
-                                         Local IP (wlan0): 10.124.1.40/24
-                                         Battery (GA40249): 88% [AC Connected]
-                                         Locale: en_US.UTF-8
-```
+![external_display](../../../assets/images/2026-05-09-070912_hyprshot.png)
+
 <p align="center">The external display is connected using an HDMI cable through a USB-C hub</p>
 
 ## The Problem
