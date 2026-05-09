@@ -15,7 +15,7 @@ tags:
   - philosophy
   - adb
 description: How to Manage Your Android Device from Hyprland (The Arch Linux Way)
-featured: true
+featured: false
 draft: false
 ---
 

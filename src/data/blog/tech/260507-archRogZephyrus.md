@@ -18,7 +18,7 @@ tags:
   - rdr2
   - rdr
 description: Optimizing your ROG Zephyrus G14 on Arch Linux with Hyprland
-featured: true
+featured: false
 draft: false
 ---
 

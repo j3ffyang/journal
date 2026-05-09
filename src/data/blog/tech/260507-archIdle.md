@@ -21,7 +21,7 @@ tags:
   - idle
   - wake
 description: Optimizing Arch Linux for a Closed-Lid Dual Monitor Setup - Solving USB-C Wake Issues
-featured: true
+featured: false
 draft: false
 ---
 
