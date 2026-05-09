@@ -16,7 +16,7 @@ tags:
   - negativespace
   - 留白
 description: Using Linux is like embracing the quiet space between things - **simple**, **clean**, **open**, and **honest**. 
-featured: true
+featured: false
 ---
 
 ## Philosophy
