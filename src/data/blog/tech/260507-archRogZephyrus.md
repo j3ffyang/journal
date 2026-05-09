@@ -1,7 +1,7 @@
 ---
 author: Jeff Yang
-pubDatetime: 2026-05-09T07:18:52.737Z
-modDatetime: 2026-05-09T07:35:46.734Z
+pubDatetime: 2026-05-08T07:18:52.737Z
+modDatetime: 2026-05-08T07:35:46.734Z
 title: Optimizing your ROG Zephyrus G14 on Arch Linux with Hyprland
 tags:
   - linux
