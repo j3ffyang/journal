@@ -13,7 +13,7 @@ tags:
   - threshold
   - simple
 description: How to configure battery charge thresholds on Arch Linux for a Dell XPS 13 using tlp to extend battery lifespan.
-featured: true
+featured: false
 ---
 
 ## Background
